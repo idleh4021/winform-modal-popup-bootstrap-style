@@ -22,7 +22,7 @@ namespace ModalPopup
 
         Form modalBackground = new Form();
 
-        object _owner = null;
+        Form _owner = null;
         //public Modal()
         //{
         //    InitializeComponent();
@@ -31,7 +31,11 @@ namespace ModalPopup
 
         //}
 
-        public Modal(object owner = null)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="owner">Modal폼을 소유하는 폼을 설정합니다. Null인경우 윈도우를 기준합니다. </param>
+        public Modal(Form owner = null)
         {
             InitializeComponent();
             InitShowingAnimation();
@@ -82,12 +86,8 @@ namespace ModalPopup
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0,0,this.Width,this.Height,20,20));
             if (_owner != null)
             {
-                if(_owner is Form) 
-                { 
-                    modalBackground.Size = ((Form)_owner).Size; 
-                    modalBackground.Location = ((Form)_owner).Location;
-                  
-                }
+                    modalBackground.Size = _owner.Size; 
+                    modalBackground.Location = _owner.Location;
             }
             else
             {
