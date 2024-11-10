@@ -58,6 +58,12 @@
     <Compile Include="Modal.Designer.cs">
       <DependentUpon>Modal.cs</DependentUpon>
     </Compile>
+    <Compile Include="popupTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popupTest.Designer.cs">
+      <DependentUpon>popupTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modal.resx">
       <DependentUpon>Modal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popupTest.resx">
+      <DependentUpon>popupTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

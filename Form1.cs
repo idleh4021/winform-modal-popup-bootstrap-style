@@ -25,6 +25,13 @@ namespace ModalPopup
             modal.ShowDialog();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            popupTest pop = new popupTest();
+            Modal modal = new Modal(pop, this);
+            modal.ShowDialog();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Modal modal = new Modal();

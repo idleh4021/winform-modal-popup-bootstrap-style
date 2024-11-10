@@ -27,7 +27,7 @@ namespace ModalPopup
         //{
         //    InitializeComponent();
         //    InitShowingAnimation();
-            
+          
 
         //}
 
@@ -43,6 +43,28 @@ namespace ModalPopup
             this.FormBorderStyle = FormBorderStyle.None;
             _owner = owner;
 
+        }
+
+        public Modal(Form ChildForm, Form owner = null)
+        {
+            InitializeComponent();
+            InitShowingAnimation();
+            InitModalBackGround();
+            this.FormBorderStyle = FormBorderStyle.None;
+            _owner = owner;
+            AddChildForm(ChildForm);
+        }
+
+        private void AddChildForm(Form childForm)
+        {
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None; // 테두리 제거
+            childForm.Dock = DockStyle.Fill;           // 부모 패널에 맞게 채움
+
+            // 부모 패널에 자식 폼 추가
+            panel1.Controls.Clear();           // 기존 폼 제거 (필요시)
+            panel1.Controls.Add(childForm);    // 자식 폼 추가
+            childForm.Show();                          // 
         }
 
         private void InitModalBackGround()
