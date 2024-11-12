@@ -1,6 +1,6 @@
 ﻿namespace ModalPopup
 {
-    partial class popupBaseModal
+    partial class PopupByBaseModal
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // popupBaseModal
+            // PopupByBaseModal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 247);
-            this.Name = "popupBaseModal";
-            this.Opacity = 1D;
-            this.Text = "popupBaseModal";
+            this.ClientSize = new System.Drawing.Size(342, 131);
+            this.Name = "PopupByBaseModal";
+            this.Text = "PopupByBaseModal";
             this.ResumeLayout(false);
 
         }

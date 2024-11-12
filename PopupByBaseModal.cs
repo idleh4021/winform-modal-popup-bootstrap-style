@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaseFrm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,11 @@ using System.Windows.Forms;
 
 namespace ModalPopup
 {
-    public partial class popupBaseModal : BaseModal
+    public partial class PopupByBaseModal : BaseModal
     {
-        public popupBaseModal() //: base()
+        public PopupByBaseModal()
         {
             InitializeComponent();
-            this.Opacity = 0.0;
         }
     }
 }
