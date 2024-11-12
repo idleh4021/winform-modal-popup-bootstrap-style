@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseModal.Designer.cs">
+      <DependentUpon>BaseModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,12 @@
     <Compile Include="Modal.Designer.cs">
       <DependentUpon>Modal.cs</DependentUpon>
     </Compile>
+    <Compile Include="popupBaseModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popupBaseModal.Designer.cs">
+      <DependentUpon>popupBaseModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="popupTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseModal.resx">
+      <DependentUpon>BaseModal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modal.resx">
       <DependentUpon>Modal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popupBaseModal.resx">
+      <DependentUpon>popupBaseModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="popupTest.resx">
       <DependentUpon>popupTest.cs</DependentUpon>
