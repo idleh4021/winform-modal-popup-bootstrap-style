@@ -35,7 +35,7 @@ namespace ModalPopup
         private void button4_Click(object sender, EventArgs e)
         {
             popupBaseModal frm = new popupBaseModal();
-            //frm.BasedForm = this;
+            frm.BasedForm = this;
             frm.ShowDialog();
         }
 

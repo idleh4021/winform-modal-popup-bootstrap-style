@@ -12,9 +12,10 @@ namespace ModalPopup
 {
     public partial class popupBaseModal : BaseModal
     {
-        public popupBaseModal()
+        public popupBaseModal() //: base()
         {
             InitializeComponent();
+            this.Opacity = 0.0;
         }
     }
 }
