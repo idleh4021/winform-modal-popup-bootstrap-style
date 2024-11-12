@@ -16,6 +16,7 @@ namespace ModalPopup
         public PopupByBaseModal()
         {
             InitializeComponent();
+            //this.Opacity = 0; //0설정이 되어야 애니메이션 처리
         }
     }
 }
