@@ -2,8 +2,7 @@
 <!--![배지 또는 로고 이미지 (선택사항)](링크)-->
 <!--프로젝트에 대한 간단한 설명을 여기에 작성합니다.-->
 Bootstrap 스타일의 모달 팝업창입니다.
-![ModalPopupBootstrapSytle](https://github.com/user-attachments/assets/749452ff-0aca-4378-9d02-ff513cff9ef2)
-
+![ModalPopupBootstrapSytle2](https://github.com/user-attachments/assets/79efa290-9f1a-4712-a171-5c632419e10e)
 
 ## 목차
 - [Modal Popup Bootstrap style](#modal-popup-bootstrap-style)
